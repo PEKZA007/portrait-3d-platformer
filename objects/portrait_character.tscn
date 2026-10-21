@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://models/portrait_character.glb" id="1_model"]
+[ext_resource type="Script" path="res://scripts/portrait_character.gd" id="2_script"]
+
+[node name="Character" type="Node3D"]
+script = ExtResource("2_script")
+
+[node name="Portrait" parent="." instance=ExtResource("1_model")]
+scale = Vector3(0.5, 0.5, 0.5)
